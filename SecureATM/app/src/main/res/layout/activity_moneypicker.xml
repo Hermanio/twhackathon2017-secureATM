@@ -36,7 +36,7 @@
             android:textColor="@drawable/text_color" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/customBox"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/darker_gray"
