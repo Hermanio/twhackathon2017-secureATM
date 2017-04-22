@@ -48,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
+            finish();
+        } else {
+            finish();
         }
     }
 
