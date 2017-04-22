@@ -20,4 +20,8 @@ public class ConfirmationActivity extends Activity {
         Intent intent = new Intent(this, MoneyGetActivity.class);
         startActivity(intent);
     }
+
+    public void goBack(View view) {
+        finish();
+    }
 }
