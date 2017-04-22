@@ -33,7 +33,7 @@ public class MoneyPickerActivity extends Activity {
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     // Perform action on key press
-                    Toast.makeText(MoneyPickerActivity.this, customBox.getText(), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MoneyPickerActivity.this, customBox.getText(), Toast.LENGTH_SHORT).show();
                     forward(v);
                     return true;
                 }

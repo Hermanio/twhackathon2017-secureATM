@@ -26,42 +26,54 @@
 
     </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/confirmationDeclineButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="42dp"
-            android:layout_toEndOf="@+id/confirmationAcceptButton"
-            android:background="@drawable/round_button"
-            android:onClick="goBack"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:text="NO"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/confirmationAcceptButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:onClick="forward"
+                android:text="Yes"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/confirmationAcceptButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="158dp"
-            android:background="@drawable/round_button"
-            android:onClick="forward"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:text="Yes"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginStart="68dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/confirmationDeclineButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:onClick="goBack"
+                android:text="NO"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
