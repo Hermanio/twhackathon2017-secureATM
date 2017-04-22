@@ -1,23 +1,20 @@
 package ee.unapuu.herman.secureatm;
 
-import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-/**
- * Created by toks on 22.04.17.
- */
+public class LoginActivity extends AppCompatActivity {
 
-public class ConfirmationActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_confirmation);
+        setContentView(R.layout.activity_login);
     }
 
-    public void forward (View view) {
-        Intent intent = new Intent(this, MoneyGetActivity.class);
+    public void onLoginButtonClick(View view) {
+        Intent intent = new Intent(this, PinActivity.class);
         startActivity(intent);
     }
 }

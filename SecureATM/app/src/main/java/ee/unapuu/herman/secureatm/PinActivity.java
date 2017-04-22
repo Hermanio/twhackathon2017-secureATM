@@ -2,6 +2,7 @@ package ee.unapuu.herman.secureatm;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -38,8 +39,6 @@ public class PinActivity extends Activity implements View.OnClickListener {
 
     }
 
-
-
     @Override
     public void onClick(View view) {
        // switch (view.getId()) {
@@ -47,7 +46,8 @@ public class PinActivity extends Activity implements View.OnClickListener {
        // }
         if (view.getTag() != null) {
             if (view.getTag().toString().equals("OK") ) {
-                Toast.makeText(this, "MOVE TO NEXT SCREEN", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, MoneyPickerActivity.class);
+                startActivity(intent);
             } else if (view.getTag().toString().equals("X")) {
                 Toast.makeText(this, "delete", Toast.LENGTH_SHORT).show();
                 pinArea.setText("");
@@ -60,4 +60,5 @@ public class PinActivity extends Activity implements View.OnClickListener {
         }
 
     }
+
 }

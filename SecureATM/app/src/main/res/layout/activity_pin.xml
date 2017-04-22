@@ -214,7 +214,7 @@
             android:layout_weight="1"
             android:tag="OK"
             android:text="OK"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
 
     </LinearLayout>
 
