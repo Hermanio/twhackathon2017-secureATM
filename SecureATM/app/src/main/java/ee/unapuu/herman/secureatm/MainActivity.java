@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void print(String info) {
-        Toast.makeText(this, info, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, info, Toast.LENGTH_SHORT).show();
         Log.i(this.getClass().getSimpleName(), info);
     }
 }

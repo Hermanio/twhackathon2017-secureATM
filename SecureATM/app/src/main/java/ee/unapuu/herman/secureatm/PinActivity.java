@@ -49,10 +49,10 @@ public class PinActivity extends Activity implements View.OnClickListener {
                 Intent intent = new Intent(this, MoneyPickerActivity.class);
                 startActivity(intent);
             } else if (view.getTag().toString().equals("X")) {
-                Toast.makeText(this, "delete", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "delete", Toast.LENGTH_SHORT).show();
                 pinArea.setText("");
             } else {
-                Toast.makeText(this, "number "+view.getTag(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "number "+view.getTag(), Toast.LENGTH_SHORT).show();
                 if (pinArea.getText().length() < 12) {
                     pinArea.setText(pinArea.getText()+"x");
                 }
