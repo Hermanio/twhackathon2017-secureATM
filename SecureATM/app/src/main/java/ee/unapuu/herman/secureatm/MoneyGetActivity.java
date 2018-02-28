@@ -2,7 +2,6 @@ package ee.unapuu.herman.secureatm;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
 
 /**
  * Created by toks on 22.04.17.

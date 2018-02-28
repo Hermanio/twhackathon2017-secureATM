@@ -1,30 +1,13 @@
 package ee.unapuu.herman.secureatm;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
-import android.os.Environment;
+import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.Toast;
-
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    File imageFile = null;
-    Bitmap bitmap;
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
     @Override
@@ -35,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void takePicture() {
-
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
@@ -55,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void print(String info) {
-        //Toast.makeText(this, info, Toast.LENGTH_SHORT).show();
         Log.i(this.getClass().getSimpleName(), info);
     }
 }

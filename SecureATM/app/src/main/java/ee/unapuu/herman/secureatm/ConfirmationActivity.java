@@ -16,7 +16,7 @@ public class ConfirmationActivity extends Activity {
         setContentView(R.layout.activity_confirmation);
     }
 
-    public void forward (View view) {
+    public void forward(View view) {
         Intent intent = new Intent(this, MoneyGetActivity.class);
         startActivity(intent);
     }
