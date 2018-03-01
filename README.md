@@ -4,6 +4,9 @@
 
 This is the app that was clobbered together in a short time period during the hackathon to showcase the promised features of our idea/product.
 
+![gif](https://github.com/Hermanio/twhackathon2017-secureATM/blob/master/demo/compilation.gif)
+
+
 # Screenshots
 ![screenshot](https://github.com/Hermanio/twhackathon2017-secureATM/blob/master/demo/1.png) ![screenshot](https://github.com/Hermanio/twhackathon2017-secureATM/blob/master/demo/2.png) 
 ![screenshot](https://github.com/Hermanio/twhackathon2017-secureATM/blob/master/demo/3.png) ![screenshot](https://github.com/Hermanio/twhackathon2017-secureATM/blob/master/demo/4.png) 
